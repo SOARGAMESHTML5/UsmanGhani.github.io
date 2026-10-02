@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project | Usman Ghani</title>
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/css/site.css" rel="stylesheet">
+  <script>
+    try { var t = localStorage.getItem("theme"); } catch (e) {}
+    document.documentElement.dataset.theme = t || (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+  </script>
+</head>
+<body data-page="project">
+
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo" id="logo"></a>
+      <div style="display:flex;align-items:center;gap:8px">
+        <nav class="nav" id="nav">
+          <a href="index.html#about">About</a>
+          <a href="index.html#experience">Experience</a>
+          <a href="index.html#projects">Projects</a>
+          <a href="index.html#lab">AI Lab</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+        <button class="icon-btn" id="themeBtn" type="button"></button>
+        <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Menu"><i class="bi bi-list"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="project"></main>
+
+  <footer><div class="container" id="footer"></div></footer>
+
+  <script src="data.js"></script>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>
