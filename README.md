@@ -1,6 +1,6 @@
 # Usman Ghani: Portfolio
 
-Live at **https://ug0100120.github.io/UsmanGhani.github.io/**. It's a static site, so no build step is needed.
+Live at **https://usmanghani.soargamesstudio.com/**. It's a static site, so no build step is needed.
 
 ## How to update it
 
