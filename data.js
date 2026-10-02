@@ -37,7 +37,7 @@ const PORTFOLIO = {
     openToWork: true, // shows the "Open to opportunities" badge
     socials: [
       { label: "LinkedIn", icon: "bi-linkedin", url: "https://www.linkedin.com/in/usmanghani-profile/" },
-      { label: "GitHub", icon: "bi-github", url: "https://github.com/UG0100120" },
+      { label: "GitHub", icon: "bi-github", url: "https://github.com/UsmanGhaniCode" },
       { label: "Soar Games", icon: "bi-controller", url: "http://www.playsoargames.com/" },
       // { label: "YouTube", icon: "bi-youtube", url: "https://youtube.com/@yourchannel" },
       // { label: "itch.io", icon: "bi-joystick", url: "https://yourname.itch.io" },
