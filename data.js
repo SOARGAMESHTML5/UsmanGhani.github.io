@@ -22,12 +22,14 @@ const PORTFOLIO = {
     roles: [
       "Lead Unity Game Developer",
       "Systems Architect",
-      "XR & Multiplayer Developer",
-      "AI / ML in Games Explorer",
+      "AR / VR / MR / XR Developer",
+      "Multiplayer Developer (Photon)",
+      "AI, LLM & ML in Unity",
+      "Founder of Soar Games",
     ],
     tagline:
-      "I build scalable, high-performance games and immersive experiences for mobile, desktop, WebGL and XR, and I'm now bringing AI and machine learning into Unity.",
-    photo: "assets/img/BG1.jpeg",
+      "I build scalable, high-performance games and immersive XR experiences, and I bring AI into Unity: local LLMs, voice AI and ML-trained NPCs. 100+ projects so far, and I learn something new every day.",
+    photo: "assets/img/profile.jpg",
     location: "Islamabad, Pakistan",
     email: "usmanghani.inbox@gmail.com",
     phone: "+92 317 1675472",
@@ -48,14 +50,17 @@ const PORTFOLIO = {
   about: [
     "I'm a Lead Unity Game Developer and Systems Architect. I build scalable, high-performance and immersive experiences for iOS, macOS, Android, WebGL, desktop and XR. My core is Unity and C#. I design multiplayer systems, optimize large projects for performance, and lead teams from architecture through to production.",
     "I care about clean architecture, maintainable code, strong Git workflows and mentoring developers, so the games we ship are production-ready and can grow.",
-    "Right now I'm going deep into AI, machine learning, deep learning and data science. I'm adding ML to Unity games, building AI-driven game experiences, and learning the fundamentals properly.",
+    "I've worked on 100+ projects across mobile, desktop, WebGL and AR/VR/MR. I'm also the founder of Soar Games (playsoargames.com), where I publish my own titles.",
+    "These days I'm bringing AI into games. I integrate local LLMs into Unity, build voice pipelines (speech-to-text, text-to-speech and voice-to-voice), and train machine-learning NPCs. I'm also studying AI, ML, deep learning and data science, and I'm especially interested in backend systems and system architecture.",
+    "I learn something new every day and try to get a little better with every project.",
   ],
 
-  /* Extra numbers shown in the stats strip.
-     "Years of experience" and "Projects" are calculated automatically. */
+  /* Numbers shown in the stats strip (max 3 here).
+     "Years of experience" is calculated automatically. */
   extraStats: [
+    { value: "100+", label: "Projects worked on" },
     { value: "6+", label: "Platforms shipped" },
-    { value: "3", label: "Studios" },
+    { value: "1", label: "Game studio founded" },
   ],
 
   /* ------------------------------------------------------------------ */
@@ -65,7 +70,7 @@ const PORTFOLIO = {
     {
       group: "Engine & Languages",
       icon: "bi-cpu",
-      items: ["Unity 2D", "Unity 3D", "C#", "HTML5", "Python (learning)"],
+      items: ["Unity 2D", "Unity 3D", "C#", "HTML5"],
     },
     {
       group: "Architecture",
@@ -75,12 +80,12 @@ const PORTFOLIO = {
     {
       group: "Multiplayer & Backend",
       icon: "bi-hdd-network",
-      items: ["Photon PUN / Realtime", "Photon Chat & Voice", "Real-time Systems", "REST API Integration"],
+      items: ["Photon PUN", "Photon Fusion", "Photon Voice", "Photon Chat", "Real-time Systems", "REST API Integration"],
     },
     {
       group: "XR & Hardware",
       icon: "bi-headset-vr",
-      items: ["VR", "AR", "MR", "Orbbec Astra", "Interactive Wall Games"],
+      items: ["AR", "VR", "MR", "XR", "Orbbec Astra", "Interactive Wall Games"],
     },
     {
       group: "Optimization",
@@ -88,9 +93,19 @@ const PORTFOLIO = {
       items: ["Addressables", "Memory Management", "Build Optimization", "Profiling"],
     },
     {
-      group: "AI / ML / Data",
+      group: "AI in Games",
       icon: "bi-stars",
-      items: ["Machine Learning in Unity", "AI-driven Gameplay", "Deep Learning", "Data Science"],
+      items: ["Local LLM Integration in Unity", "Speech-to-Text", "Text-to-Speech", "Voice-to-Voice", "ML-trained NPCs", "AI-driven Gameplay"],
+    },
+    {
+      group: "AI / ML / Data (learning)",
+      icon: "bi-graph-up",
+      items: ["Machine Learning", "Deep Learning", "Data Science", "Python"],
+    },
+    {
+      group: "Backend & Architecture",
+      icon: "bi-server",
+      items: ["Backend Systems", "System Architecture", "APIs", "Scalable Design"],
     },
     {
       group: "Platforms",
@@ -109,6 +124,21 @@ const PORTFOLIO = {
   /*    end: "present" for a current job                                 */
   /* ------------------------------------------------------------------ */
   experience: [
+    {
+      role: "Founder & Game Developer",
+      company: "Soar Games",
+      location: "playsoargames.com",
+      url: "http://www.playsoargames.com/",
+      type: "Own studio",
+      start: "2022-05", // ← change to the real start month
+      end: "present",
+      points: [
+        "Founded Soar Games and built playsoargames.com to publish my own games.",
+        "Designed, developed and released mobile titles on Google Play, including JP Spinner, Dunk Ball, Crashy Race, Knife Shooting, Color Shooting 2D and Car Driving Simulator 3D.",
+        "Handled the full cycle myself: game design, development, monetization (AdMob, Unity Ads) and store publishing.",
+      ],
+      tags: ["Founder", "Unity", "Mobile", "Publishing"],
+    },
     {
       role: "Lead Game Developer",
       company: "Eyesight Electronics",
@@ -405,28 +435,40 @@ const PORTFOLIO = {
   /* ------------------------------------------------------------------ */
   lab: [
     {
-      title: "Machine Learning inside Unity",
+      title: "Local LLMs inside Unity",
+      status: "Building",
+      icon: "bi-chat-square-dots",
+      text: "Running large language models locally and connecting them to Unity, so characters can hold real conversations without relying on a cloud API.",
+    },
+    {
+      title: "Voice AI: STT, TTS & Voice-to-Voice",
+      status: "Building",
+      icon: "bi-mic",
+      text: "Speech-to-text, text-to-speech and full voice-to-voice pipelines in Unity, so players can talk to characters and hear them answer.",
+    },
+    {
+      title: "ML-trained NPCs",
       status: "Building",
       icon: "bi-robot",
-      text: "Adding trained ML models and learning agents to Unity games for smarter NPCs, adaptive difficulty and new gameplay mechanics.",
+      text: "Training NPCs with machine learning in Unity, so their behaviour is learned rather than hand-scripted.",
     },
     {
       title: "AI-powered Games",
       status: "Building",
       icon: "bi-controller",
-      text: "Building games with AI at the core: generative content, AI-driven characters, and gameplay designed around AI systems.",
+      text: "Building games with AI at the core: AI-driven characters, dynamic content, and gameplay designed around AI systems.",
     },
     {
-      title: "AI, ML & Deep Learning Foundations",
+      title: "AI, ML, Deep Learning & Data Science",
       status: "Learning",
       icon: "bi-diagram-2",
-      text: "Studying how models actually work, including supervised and unsupervised learning, neural networks and training pipelines.",
+      text: "Studying the foundations properly: how models learn, neural networks, training pipelines, and working with data in Python.",
     },
     {
-      title: "Data Science",
+      title: "Backend & System Architecture",
       status: "Learning",
-      icon: "bi-bar-chart-line",
-      text: "Analysing and visualising data with Python, with a focus on game analytics and player-behaviour insights.",
+      icon: "bi-server",
+      text: "Going deeper into backend systems and architecture: scalable servers, APIs and the infrastructure behind multiplayer and AI features.",
     },
   ],
 

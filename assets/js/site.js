@@ -104,7 +104,6 @@
     const years = Math.floor(((latestEnd - earliest) / (365.25 * 864e5)) + 0.1);
     const stats = [
       { value: `${years}+`, label: "Years of experience" },
-      { value: `${D.projects.length}+`, label: "Projects shipped" },
       ...(D.extraStats || []),
     ].slice(0, 4);
     $("#stats").innerHTML = stats.map((s) => `<div class="stat"><b class="gradient-text">${esc(s.value)}</b><span>${esc(s.label)}</span></div>`).join("");
@@ -135,7 +134,7 @@
         <div class="tl-item reveal"><div class="tl-card">
           <div class="tl-top"><h3>${esc(e.role)}${e.type ? `<span class="pill">${esc(e.type)}</span>` : ""}</h3>
             <span class="tl-date">${fmtDate(e.start)} – ${fmtDate(e.end)}</span></div>
-          <div class="tl-company"><b>${esc(e.company)}</b> · ${esc(e.location)} · ${duration(e.start, e.end)}</div>
+          <div class="tl-company"><b>${e.url ? `<a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.company)}</a>` : esc(e.company)}</b> · ${esc(e.location)} · ${duration(e.start, e.end)}</div>
           <ul>${e.points.map((p) => `<li>${esc(p)}</li>`).join("")}</ul>
           ${chips(e.tags)}
         </div></div>`)
@@ -162,7 +161,7 @@
     // contact
     $("#contactBox").innerHTML = `
       <h2>Let's build something <span class="gradient-text">great</span></h2>
-      <p>I'm open to game development, XR, multiplayer and AI-in-games roles and collaborations. The fastest way to reach me is email.</p>
+      <p>I'm open to game development, XR, multiplayer, AI-in-games and backend/architecture roles and collaborations. The fastest way to reach me is email.</p>
       <div class="btn-row">
         <a class="btn btn-primary" href="mailto:${esc(P.email)}"><i class="bi bi-envelope"></i>${esc(P.email)}</a>
         ${P.phone ? `<a class="btn btn-ghost" href="https://wa.me/${esc(P.phone.replace(/\D/g, ""))}" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i>WhatsApp</a>` : ""}
